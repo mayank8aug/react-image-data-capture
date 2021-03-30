@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-image-capture
+npm install --save react-image-data-capture
 ```
 
 ## Usage
@@ -15,12 +15,13 @@ npm install --save react-image-capture
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-image-capture'
-import 'react-image-capture/dist/index.css'
+import ImageCapture from 'react-data-image-capture';
 
-class Example extends Component {
+class Test extends Component {
+  const onCaptureFn = imageData => { console.log(imageData); };
+  const onErrorFn = error -> { console.log(error); };
   render() {
-    return <MyComponent />
+    return <ImageCapture onCapture={onCaptureFn} onError={onErrorFn} width={300} userMediaConfig={{ video: true }} />
   }
 }
 ```
