@@ -1,4 +1,4 @@
-# react-image-capture
+# react-image-data-capture
 
 > Component to capture camera image
 
@@ -13,15 +13,21 @@ npm install --save react-image-data-capture
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
+import React from 'react';
 import ImageCapture from 'react-data-image-capture';
 
-class Test extends Component {
+function MyImageCaptureComponent() {
   const onCaptureFn = imageData => { console.log(imageData); };
-  const onErrorFn = error -> { console.log(error); };
+  const onErrorFn = error => { console.log(error); };
   render() {
-    return <ImageCapture onCapture={onCaptureFn} onError={onErrorFn} width={300} userMediaConfig={{ video: true }} />
+    return (
+      <ImageCapture
+        onCapture={onCaptureFn}
+        onError={onErrorFn}
+        width={300}
+        userMediaConfig={{ video: true }}
+      />
+    );
   }
 }
 ```
