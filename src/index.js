@@ -1,7 +1,26 @@
 import React, { Fragment } from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { createRef, useCallback } from 'react';
-import './index.css';
+
+const imageContainer = {
+    position: 'relative',
+    display: 'inline-block'
+};
+const imageCanvas = {
+    display: 'none'
+};
+const captureBtn = {
+    border: '1px solid white',
+    borderRadius: '50%',
+    width: '50px',
+    height: '50px',
+    background: '#f7473587',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    cursor: 'pointer'
+  }
 
 function ImageCapture(props) {
     const { onCapture, onError, width, userMediaConfig } = props;
@@ -46,12 +65,12 @@ function ImageCapture(props) {
     }, [onCapture, canvasRef, playerRef]);
 
     return (
-        <div className="image-container">
+        <div style={imageContainer}>
             <video ref={playerRef} autoPlay width={width}></video>
             {streaming &&
                 <Fragment>
-                    <div className="capture-btn" onClick={captureImage} />
-                    <canvas className="image-canvas" ref={canvasRef} />
+                    <div style={captureBtn} onClick={captureImage} />
+                    <canvas style={imageCanvas} ref={canvasRef} />
                 </Fragment>
             }
         </div>
