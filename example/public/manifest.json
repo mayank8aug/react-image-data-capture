@@ -1,6 +1,6 @@
 {
-  "short_name": "react-image-capture",
-  "name": "react-image-capture",
+  "short_name": "react-image-data-capture",
+  "name": "react-image-data-capture",
   "icons": [
     {
       "src": "favicon.ico",
