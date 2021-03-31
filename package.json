@@ -11,6 +11,18 @@
   "engines": {
     "node": ">=10"
   },
+  "keywords": [
+    "react-image-data-capture",
+    "image-file",
+    "image-blob",
+    "image-webP",
+    "image",
+    "snapshot",
+    "capture",
+    "media",
+    "stream",
+    "camera"
+  ],
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
