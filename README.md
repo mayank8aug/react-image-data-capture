@@ -42,6 +42,13 @@ function MyImageCaptureComponent() {
 }
 ```
 
+## Examples
+
+To play around with the component, try these interactive sample apps
+
+[CodeSandbox](https://codesandbox.io/s/react-image-data-capture-5cc5z)
+
+
 ## Props
 
 | Prop | Type | Optional | Default | Description |
@@ -50,13 +57,6 @@ function MyImageCaptureComponent() {
 | onError | Function | Yes | - | Callback function to be triggered in case of error while accessing the camera | |
 | width | Number | No | - | Width of the camera stream to be rendered in px |
 | userMediaConfig | Object | No | -- | [MediaStreamContraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) object to be passed to the [getUserMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) |
-
-
-## Examples
-
-To play around with the component, try these interactive sample apps
-
-[CodeSandbox](https://codesandbox.io/s/react-image-data-capture-5cc5z)
 
 
 ## License
