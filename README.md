@@ -51,6 +51,7 @@ function MyImageCaptureComponent() {
 | width | Number | No | - | Width of the camera stream to be rendered in px |
 | userMediaConfig | Object | No | -- | [MediaStreamContraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) object to be passed to the [getUserMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) |
 
+
 ## License
 
 MIT © [mayank8aug](https://github.com/mayank8aug)
