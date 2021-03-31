@@ -55,6 +55,7 @@ function MyImageCaptureComponent() {
 ## Examples
 
 To play around with the component, try these interactive sample apps
+
 [CodeSandbox](https://codesandbox.io/s/react-image-data-capture-5cc5z)
 
 
