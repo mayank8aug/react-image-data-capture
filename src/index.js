@@ -20,7 +20,7 @@ const captureBtn = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     cursor: 'pointer'
-  }
+}
 
 function ImageCapture(props) {
     const { onCapture, onError, width, userMediaConfig } = props;
@@ -37,13 +37,21 @@ function ImageCapture(props) {
                 tracks.current = stream.getTracks();
                 timeout = setTimeout(() => setStreaming(true), 2000);
             }).catch(error => {
-                console.error('Error: Unable to access camera ::', error);
                 if (onError) onError(error);
             });
         return () => {
             if (timeout) clearTimeout(timeout);
         };
-    }, [playerRef, onError, userMediaConfig]);
+    }, [onError, userMediaConfig]);
+
+    useEffect(() => {
+        return () => {
+            // Stop the camera stream
+            if (tracks.current) {
+                tracks.current[0].stop();
+            }
+        };
+    }, []);
 
     const captureImage = useCallback(() => {
         const imageWidth = playerRef.current.offsetWidth;
@@ -55,13 +63,9 @@ function ImageCapture(props) {
         if (onCapture) {
             const webPData = canvasRef.current.toDataURL('image/webp');
             canvasRef.current.toBlob((blob) => {
-                onCapture({ blob, webP: webPData, file: new File([webPData], `${new Date().getTime}.png`)});
+                onCapture({ blob, webP: webPData, file: new File([webPData], `${new Date().getTime}.png`) });
             });
         }
-        // Stop the camera stream
-        if (tracks.current) {
-            tracks.current[0].stop();
-        }  
     }, [onCapture, canvasRef, playerRef]);
 
     return (

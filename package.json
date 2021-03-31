@@ -1,10 +1,10 @@
 {
   "name": "react-image-data-capture",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Component to capture camera image",
   "author": "mayank8aug",
   "license": "MIT",
-  "repository": "mayank8aug/react-image-capture",
+  "repository": "mayank8aug/react-image-data-capture",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
