@@ -52,6 +52,12 @@ function MyImageCaptureComponent() {
 | userMediaConfig | Object | No | -- | [MediaStreamContraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) object to be passed to the [getUserMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) |
 
 
+## Examples
+
+To play around with the component, try these interactive sample apps
+[CodeSandbox](https://codesandbox.io/s/react-image-data-capture-5cc5z)
+
+
 ## License
 
 MIT © [mayank8aug](https://github.com/mayank8aug)
