@@ -42,6 +42,15 @@ function MyImageCaptureComponent() {
 }
 ```
 
+## Props
+
+| Prop | Type | Optional | Default | Description |
+| --- | :---: | :---: | :---: | --- |
+| onCapture | Function | No | - | Callback function to be triggered on image capture |
+| onError | Function | Yes | - | Callback function to be triggered in case of error while accessing the camera | |
+| width | Number | No | - | Width of the camera stream to be rendered in px |
+| userMediaConfig | Object | No | [MediaStreamContraints object to be used to get the user media](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) |
+
 ## License
 
 MIT © [mayank8aug](https://github.com/mayank8aug)
