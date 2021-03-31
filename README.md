@@ -19,9 +19,9 @@ import ImageCapture from 'react-data-image-capture';
 function MyImageCaptureComponent() {
   const [imgSrc, setImgSrc] = useState(null);
   const onCapture = imageData => { setImgSrc(imageData.webP) };
-  // Make sure to use useCallback to avoid unexpected behaviour while rerendering
+  // Use useCallback to avoid unexpected behaviour while rerendering
   const onError = useCallback(error => { console.log(error) }, []);
-  // Make sure to use useMemo to avoid unexpected behaviour while rerendering
+  // Use useMemo to avoid unexpected behaviour while rerendering
   const config = useMemo(() => ({ video: true }), []);
   return (
     <>
@@ -30,7 +30,6 @@ function MyImageCaptureComponent() {
         onError={onError}
         width={300}
         userMediaConfig={config}
-        closeAfterCapture
       />
       {imgSrc &&
         <div>
