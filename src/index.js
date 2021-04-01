@@ -63,7 +63,7 @@ function ImageCapture(props) {
         if (onCapture) {
             const webPData = canvasRef.current.toDataURL('image/webp');
             canvasRef.current.toBlob((blob) => {
-                onCapture({ blob, webP: webPData, file: new File([webPData], `${new Date().getTime}.png`) });
+                onCapture({ blob, webP: webPData, file: new File([webPData], `${new Date().getTime()}.png`) });
             });
         }
     }, [onCapture, canvasRef, playerRef]);

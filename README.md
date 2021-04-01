@@ -18,11 +18,26 @@ import ImageCapture from 'react-data-image-capture';
 
 function MyImageCaptureComponent() {
   const [imgSrc, setImgSrc] = useState(null);
-  const onCapture = (imageData) => { setImgSrc(imageData.webP) };
+  const [imgFile, setImgFile] = useState(null);
+  const onCapture = (imageData) => {
+    // read as webP
+    setImgSrc(imageData.webP);
+    // read as file
+    setImgFile(imageData.file);
+    // read as blob
+    // imageData.blob
+  };
+  
   // Use useCallback to avoid unexpected behaviour while rerendering
   const onError = useCallback((error) => { console.log(error) }, []);
+  
   // Use useMemo to avoid unexpected behaviour while rerendering
   const config = useMemo(() => ({ video: true }), []);
+
+  // imgFile can be used as a file upload field form submission
+  const formData = new FormData();
+  formData.append("file", imgFile);
+  
   return (
     <>
       <ImageCapture
