@@ -79,6 +79,7 @@ To play around with the component, try these interactive sample apps
 | userMediaConfig | Object | No | -- | [MediaStreamContraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) object to be passed to the [getUserMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia). |
 
 
+
 ## License
 
 MIT © [mayank8aug](https://github.com/mayank8aug)
