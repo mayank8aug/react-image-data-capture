@@ -33,6 +33,11 @@ function MyImageCaptureComponent() {
   
   // Use useMemo to avoid unexpected behaviour while rerendering
   const config = useMemo(() => ({ video: true }), []);
+  /*
+    { video: true } - Default Camera View
+    { video: { facingMode: environment } } - Back Camera
+    { video: { facingMode: "user" } } - Front Camera
+  */
 
   // imgFile can be used as a file upload field form submission
   const formData = new FormData();

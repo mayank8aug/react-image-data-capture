@@ -4,6 +4,11 @@ import ImageCapture from "react-image-data-capture";
 
 const App = () => {
   const config = useMemo(() => ({ video: true }), []);
+  /*
+    { video: true } - Default Camera View
+    { video: { facingMode: environment } } - Back Camera
+    { video: { facingMode: "user" } } - Front Camera
+  */
   const [imgSrc, setImgSrc] = useState(null);
   const [imgFile, setImgFile] = useState(null);
   const onCapture = (imageData) => {
