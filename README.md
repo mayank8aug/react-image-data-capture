@@ -2,7 +2,7 @@
 
 > Component to capture camera image. The image data can be retrieved as a blob, a webP or a file object.
 
-[![NPM](https://img.shields.io/npm/v/react-image-data-capture.svg)](https://www.npmjs.com/package/react-image-data-capture) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-image-data-capture.svg)](https://www.npmjs.com/package/react-image-data-capture) ![npm](https://img.shields.io/npm/dm/react-image-data-capture)
 
 ## Install
 
