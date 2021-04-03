@@ -1,7 +1,7 @@
 {
   "name": "react-image-data-capture",
-  "version": "1.2.0",
-  "description": "Component to capture camera image",
+  "version": "1.2.1",
+  "description": "Component to capture camera image. The image data can be retrieved as a blob, a webP or a file object.",
   "author": "mayank8aug",
   "license": "MIT",
   "repository": "mayank8aug/react-image-data-capture",

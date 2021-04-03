@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-image-data-capture
+npm install react-image-data-capture
 ```
 
 ## Usage
