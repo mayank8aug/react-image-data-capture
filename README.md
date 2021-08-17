@@ -14,7 +14,7 @@ npm install react-image-data-capture
 
 ```jsx
 import React from 'react';
-import ImageCapture from 'react-data-image-capture';
+import ImageCapture from 'react-image-data-capture';
 
 function MyImageCaptureComponent() {
   const [imgSrc, setImgSrc] = useState(null);
