@@ -64,7 +64,7 @@ function MyImageCaptureComponent() {
 
 ## Examples
 
-To play around with the component, try these interactive sample apps
+To play around with the component, try these interactive sample apps. This will also help to understand how to mount/unmount the component to control the track streaming.
 
 [CodeSandbox](https://codesandbox.io/s/react-image-data-capture-5cc5z)
 
