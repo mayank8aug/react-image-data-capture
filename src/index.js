@@ -70,7 +70,7 @@ function ImageCapture(props) {
 
     return (
         <div style={imageContainer}>
-            <video ref={playerRef} autoPlay width={width}></video>
+            <video ref={playerRef} autoPlay width={width} playsInline></video>
             {streaming &&
                 <Fragment>
                     <div style={captureBtn} onClick={captureImage} />
